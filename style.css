@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Barlow Semi Condensed";
+    src: url("Barlow_Semi_Condensed/BarlowSemiCondensed-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Barlow Semi Condensed Thin";
+    src: url("Barlow_Semi_Condensed/BarlowSemiCondensed-Thin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Barlow Semi Condensed Medium";
+    src: url("Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+.attribution{
+    font-size: 11px; text-align: center;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+html, body{
+    height: 100%;
+    margin: 0%;
+}
+body{
+    background-color:   hsl(210, 46%, 95%);
+}
+
+img{
+    border-radius: 50%;
+}
+
+/* #Daniel img{
+    anchor-name: --al;
+}
+#Daniel div{
+    margin-left: 20px;
+    position: absolute;
+    position-anchor: --al;
+    position-area: right;
+
+} */
+figure{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+figcaption{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+article{
+    padding: 30px 38px;
+    border-radius: 1rem;
+    margin: 30px 20px;
+    font-family: "Barlow Semi Condensed Thin";
+    font-size: 13px;
+}
+
+article h1{
+    font-family: "Barlow Semi Condensed Thin";
+    font-size: 13px;
+}
+.headline{
+    font-family: "Barlow Semi Condensed Medium";
+    font-size: 20px;
+    margin: 15px auto;
+}
+
+#Daniel{
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 85% top;
+    background-size: 130px;
+}
+
+#Daniel h1, #Jonathan h1, #Patrick h1{
+    color: hsl(0, 0%, 100%);
+}
+
+#Daniel h2, #Jonathan h2, #Patrick h2{
+    color: hsla(0, 0%, 100%, 0.5);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+#Daniel .headline, #Jonathan .headline, #Patrick .headline{
+    color: hsl(0, 0%, 100%);
+}
+
+#Daniel p{
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+#Jonathan{
+    background-color: hsl(217, 19%, 35%);
+}
+#Jonathan p, #Patrick p{
+    color: white;
+}
+
+#Jeanette h1, #Kira h1{
+    color: hsl(217, 19%, 35%);
+}
+
+#Jeanette h2, #Kira h2{
+    color: hsl(217, 19%, 35%);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+#Jeanette .headline, #Kira .headline{
+    color: hsl(217, 19%, 35%);
+}
+
+#Jeanette p, #Kira p{
+    color: hsl(217, 19%, 35%);
+}
+
+#Jeanette, #Kira{
+    background-color: hsl(0, 0%, 100%);
+}
+#Patrick{
+    background-color:  hsl(219, 29%, 14%);
+}
+
+@media screen and (min-width: 1000px) { 
+    html, body{
+        height: 100%;
+        margin: 0%;
+    }
+    .wrapper {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        width: 100%;
+      }
+       
+    main{
+        height: auto;
+        width: 80%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+    article{
+        margin: 0;
+    }
+    #Daniel{
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+    #Jonathan{
+        grid-column: 3;
+        grid-row: 1;
+    }
+    #Patrick{
+        grid-column: 2/4;
+        grid-row: 2;
+    }
+    #Kira{
+        grid-column: 4;
+        grid-row: 1/3;
+    }
+    #Jeanette{
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
